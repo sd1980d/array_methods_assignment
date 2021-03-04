@@ -5,7 +5,13 @@
  * @returns {number} Sum of all numbers
  */
 
-const sumArray = () => {};
+const sumArray = (numbers) => {
+  let result = 0;
+  numbers.forEach( number  => {
+    result += number;
+  })
+  return result;
+};
 
 /**
  * Takes in an array of numbers and returns the amount of zeros that occur in it.
@@ -14,7 +20,13 @@ const sumArray = () => {};
  * Must use forEach
  */
 
-const zeroCount = () => {};
+const zeroCount = (numbers ) => {
+  let newArr = []
+  numbers.map( num => {
+    let newNumber = num += 10;
+    newArr.push(newNumber);
+  })
+};
 
 /**
  * Takes in an array of numbers and returns a new array where each
