@@ -20,12 +20,16 @@ const sumArray = (numbers) => {
  * Must use forEach
  */
 
-const zeroCount = (numbers ) => {
-  let newArr = []
-  numbers.map( num => {
-    let newNumber = num += 10;
-    newArr.push(newNumber);
-  })
+const zeroCount = (numbers ) => { 
+let zeroArray = [];
+  const checkIfZero = (item) => {
+   if(item === 0) {
+    zeroArray.push(item);
+   }
+  }
+  numbers.forEach(checkIfZero);
+  return zeroArray.length ;
+
 };
 
 /**
